@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Royal Stay Hotel</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 50px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: #c59d5f;
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #c59d5f;
+        }
+
+        /* ================= HERO BAR ================= */
+        .hero {
+            background: linear-gradient(135deg, #c59d5f, #111);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+        }
+
+        /* ================= CONTACT LAYOUT (NEW STYLE) ================= */
+        .contact-wrapper {
+            display: flex;
+            max-width: 1100px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        /* LEFT INFO PANEL */
+        .contact-info {
+            width: 40%;
+            background: #111;
+            color: white;
+            padding: 40px;
+        }
+
+        .contact-info h3 {
+            color: #c59d5f;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .contact-info .highlight {
+            margin-top: 10px;
+            padding: 15px;
+            border-left: 4px solid #c59d5f;
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* RIGHT FORM PANEL */
+        .contact-form {
+            width: 60%;
+            padding: 40px;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #c59d5f;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #a77d3f;
+        }
+
+        /* ================= MAP STYLE BLOCK ================= */
+        .map {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .map-box {
+            height: 250px;
+            background: #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media(max-width:768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+
+            .contact-info,
+            .contact-form {
+                width: 100%;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Royal Stay Hotel</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html">Booking</a>
+        <a href="Services.html">Services</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero"
+    style="
+        min-height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        background: linear-gradient(
+            rgba(108, 116, 225, 0.35),
+            rgba(224, 15, 15, 0.35)
+        ),
+        url('images/hotel-hero.jpg') center/cover no-repeat;
+
+        color: white;
+        padding: 10px;
+    ">
+
+    <div class="hero-content">
+        <h2 style="color: black;">Contact & Message</h2> 
+    <p>
+        We are here to assist you 24/7 for reservations and support
+    </p>
+</section>
+
+<!-- CONTACT SECTION (NEW SPLIT DESIGN) -->
+<div class="contact-wrapper">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+        <h3>Hotel Info</h3>
+
+        <p><strong>Address:</strong> Beach Road, Goa</p>
+        <p><strong>Phone:</strong> +91 98765 12345</p>
+        <p><strong>Email:</strong> booking@royalstay.com</p>
+        <p><strong>Open:</strong> 24/7 Service</p>
+
+        <div class="highlight">
+            <p>✨ Luxury stays with premium comfort and sea view rooms.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-form">
+        <h3>Send a Message</h3>
+
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<!-- MAP -->
+ <section class="hero"
+    style="
+        min-height:20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        background: linear-gradient(
+            rgba(108, 116, 225, 0.35),
+            rgba(224, 15, 15, 0.35)
+        ),
+        url('images/hotel-hero.jpg') center/cover no-repeat;
+
+        color: white;
+        padding: 10px;
+    ">
+
+    <div class="hero-content">
+        <div class="map">
+    
+    <div class="hero-content">
+        <h3 style="color: black;">Location</h3> 
+    <p>
+        We are here.
+    </p>
+</section><div class="map">
+    
+    <div class="hero-content">
+        <h3 style="color: black;">Location</h3> 
+    
+
+    <div class="map-box">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3477!2d78.3995!3d17.4946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91c7f0c0c0c1%3A0x0!2sHyderabad!5e0!3m2!1sen!2sin!4v0000000000000"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Royal Stay Hotel | All Rights Reserved
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

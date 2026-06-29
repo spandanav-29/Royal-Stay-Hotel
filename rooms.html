@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rooms | Royal Stay Hotel</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #222;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 50px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: #c59d5f;
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #c59d5f;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #111, #c59d5f);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        /* ================= ROOM SECTION (NEW STYLE) ================= */
+        .room-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 70px 10%;
+            background: white;
+            margin: 30px auto;
+            max-width: 1100px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .room-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .room-section img {
+            width: 50%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .room-info {
+            width: 50%;
+        }
+
+        .room-info h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #c59d5f;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 18px;
+            border: none;
+            background: #c59d5f;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #a77d3f;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media(max-width:768px) {
+            .room-section {
+                flex-direction: column !important;
+                text-align: center;
+            }
+
+            .room-section img,
+            .room-info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Royal Stay Hotel</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html">Booking</a>
+        <a href="Services.html">Services</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero"
+    style="
+        min-height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        background: linear-gradient(
+            rgba(108, 116, 225, 0.35),
+            rgba(224, 15, 15, 0.35)
+        ),
+        url('images/hotel-hero.jpg') center/cover no-repeat;
+
+        color: white;
+        padding: 10px;
+    ">
+
+    <div class="hero-content">
+        <h2 style="color: black;">Luxury Rooms & Suites</h2>
+
+        <p>
+            Experience comfort, elegance, and premium hospitality
+        </p>
+    </div>
+</section>
+
+<!-- ROOM 1 -->
+<section class="room-section">
+    <img src="images/room1.jpg" alt="Deluxe Room">
+    <div class="room-info">
+        <h3>Deluxe Room</h3>
+        <p>Perfect for couples with luxury interiors and peaceful ambiance.</p>
+        <div class="price">₹2500 / Night</div>
+        <button onclick="alert('Deluxe Room Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- ROOM 2 -->
+<section class="room-section">
+    <img src="images/room2.jpg" alt="Executive Room">
+    <div class="room-info">
+        <h3>Executive Room</h3>
+        <p>Spacious room with modern amenities for business travelers.</p>
+        <div class="price">₹3500 / Night</div>
+        <button onclick="alert('Executive Room Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- ROOM 3 -->
+<section class="room-section">
+    <img src="images/room3.jpg" alt="Suite Room">
+    <div class="room-info">
+        <h3>Luxury Suite</h3>
+        <p>Premium suite with living room, balcony, and ocean view.</p>
+        <div class="price">₹5000 / Night</div>
+        <button onclick="alert('Suite Room Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- ROOM 4 -->
+<section class="room-section">
+    <img src="images/room4.jpg" alt="Family Room">
+    <div class="room-info">
+        <h3>Family Room</h3>
+        <p>Spacious room perfect for families with extra beds and comfort facilities.</p>
+        <div class="price">₹3800 / Night</div>
+        <button onclick="alert('Family Room Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- ROOM 5 -->
+<section class="room-section">
+    <img src="images/room5.jpg" alt="Honeymoon Suite">
+    <div class="room-info">
+        <h3>Honeymoon Suite</h3>
+        <p>Romantic luxury suite designed for couples with private ambience and décor.</p>
+        <div class="price">₹4500 / Night</div>
+        <button onclick="alert('Honeymoon Suite Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- ROOM 6 -->
+<section class="room-section">
+    <img src="images/room6.jpg" alt="Presidential Suite">
+    <div class="room-info">
+        <h3>Presidential Suite</h3>
+        <p>Ultra-luxury suite with premium interiors, city view, and VIP services.</p>
+        <div class="price">₹8000 / Night</div>
+        <button onclick="alert('Presidential Suite Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- ROOM 7 -->
+<section class="room-section">
+    <img src="images/room7.jpg" alt="Standard Room">
+    <div class="room-info">
+        <h3>Standard Room</h3>
+        <p>Budget-friendly room with all essential comforts for a pleasant stay.</p>
+        <div class="price">₹2000 / Night</div>
+        <button onclick="alert('Standard Room Selected')">Book Now</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Royal Stay Hotel | All Rights Reserved
+</footer>
+
+</body>
+</html>

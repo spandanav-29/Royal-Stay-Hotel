@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Royal Stay Hotel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+header h1{
+    color:#c59d5f;
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#c59d5f;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(
+        rgba(108, 116, 225, 0.35),
+        rgba(224, 15, 15, 0.35)
+    ),
+    url("images/hotel-hero.jpg") center/cover no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Services */
+.services-wrapper{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+    transition:.3s;
+    position:relative;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:7px;
+    background:linear-gradient(90deg,#8B0000,#ff4d4d);
+}
+
+.service-icon{
+    font-size:60px;
+    text-align:center;
+    padding-top:30px;
+}
+
+.service-content{
+    padding:25px;
+    text-align:center;
+}
+
+.service-content h3{
+    color:#8B0000;
+    margin-bottom:12px;
+}
+
+.service-content p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 22px;
+    background:#c59d5f;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#a77d3f;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    background:#111;
+    color:#aaa;
+    padding:20px;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Royal Stay Hotel</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="rooms.html">Rooms</a>
+<a href="gallery.html">Gallery</a>
+<a href="services.html">Services</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+    
+    <h2>Our Premium Services</h2>
+    <p>Luxury, Comfort & World-Class Hospitality</p>
+</section>
+
+
+<section class="services-wrapper">
+
+<section class="services-wrapper">
+
+    <div class="services-grid">
+
+        <!-- Room Service -->
+        <div class="service-card">
+            <div class="service-icon">🛎</div>
+            <div class="service-content">
+                <h3>24/7 Room Service</h3>
+                <p>Our professional staff is available around the clock to serve you.</p>
+
+                <div class="mini-menu">
+                    <div>✔ Breakfast in Room</div>
+                    <div>✔ Lunch & Dinner</div>
+                    <div>✔ Late-Night Snacks</div>
+                    <div>✔ Beverage Service</div>
+                </div>
+
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Restaurant -->
+        <div class="service-card">
+            <div class="service-icon">🍽</div>
+            <div class="service-content">
+                <h3>Restaurant</h3>
+                <p>Enjoy delicious Indian, Chinese and Continental cuisine.</p>
+
+                <div class="mini-menu">
+                    <div>✔ Indian Cuisine</div>
+                    <div>✔ Chinese Cuisine</div>
+                    <div>✔ Continental</div>
+                    <div>✔ Buffet & À la Carte</div>
+                </div>
+
+                <a href="booking.html" class="btn">Reserve</a>
+            </div>
+        </div>
+
+        <!-- Swimming Pool -->
+        <div class="service-card">
+            <div class="service-icon">🏊</div>
+            <div class="service-content">
+                <h3>Swimming Pool</h3>
+                <p>Relax in our luxurious swimming pool with beautiful surroundings.</p>
+
+                <div class="mini-menu">
+                    <div>✔ Outdoor Pool</div>
+                    <div>✔ Kids Pool</div>
+                    <div>✔ Poolside Lounge</div>
+                    <div>✔ Towels Provided</div>
+                </div>
+
+                <a href="booking.html" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <!-- Spa -->
+        <div class="service-card">
+            <div class="service-icon">💆</div>
+            <div class="service-content">
+                <h3>Spa & Wellness</h3>
+                <p>Refresh your body and mind with premium spa treatments.</p>
+
+                <div class="mini-menu">
+                    <div>✔ Aromatherapy</div>
+                    <div>✔ Deep Tissue Massage</div>
+                    <div>✔ Steam Bath</div>
+                    <div>✔ Sauna</div>
+                </div>
+
+                <a href="booking.html" class="btn">Book Spa</a>
+            </div>
+        </div>
+
+        <!-- Parking -->
+        <div class="service-card">
+            <div class="service-icon">🚗</div>
+            <div class="service-content">
+                <h3>Free Parking</h3>
+                <p>Safe and secure parking facilities available for every guest.</p>
+
+                <div class="mini-menu">
+                    <div>✔ Secure Parking</div>
+                    <div>✔ CCTV Security</div>
+                    <div>✔ Valet Parking</div>
+                    <div>✔ EV Charging</div>
+                </div>
+
+                <a href="booking.html" class="btn">View</a>
+            </div>
+        </div>
+
+        <!-- Wi-Fi -->
+        <div class="service-card">
+            <div class="service-icon">📶</div>
+            <div class="service-content">
+                <h3>High-Speed Wi-Fi</h3>
+                <p>Stay connected with complimentary high-speed internet access.</p>
+
+                <div class="mini-menu">
+                    <div>✔ Unlimited Internet</div>
+                    <div>✔ 100 Mbps Speed</div>
+                    <div>✔ Smart TV Support</div>
+                    <div>✔ Business Friendly</div>
+                </div>
+
+                <a href="booking.html" class="btn">Connect</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+© 2026 Royal Stay Hotel | All Rights Reserved
+</footer>
+
+</body>
+</html>

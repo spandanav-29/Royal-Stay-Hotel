@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking | Royal Stay Hotel</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 50px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            color: #c59d5f;
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #c59d5f;
+        }
+
+        /* HERO */
+        .hero {
+    background: linear-gradient(
+        rgba(108, 116, 225, 0.35),
+        rgba(224, 15, 15, 0.35)
+    ),
+    url('images/hotel-hero.jpg') center/cover no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+}
+
+        /* BOOKING WRAPPER */
+        .booking-wrapper {
+            display: flex;
+            max-width: 1100px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        /* LEFT INFO */
+        .booking-info {
+            width: 40%;
+            background: #111;
+            color: white;
+            padding: 40px;
+        }
+
+        .booking-info h3 {
+            color: #c59d5f;
+            margin-bottom: 20px;
+        }
+
+        .booking-info p {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        /* RIGHT FORM */
+        .booking-form {
+            width: 60%;
+            padding: 40px;
+        }
+
+        .booking-form h3 {
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #c59d5f;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #a77d3f;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .booking-wrapper {
+                flex-direction: column;
+            }
+
+            .booking-info,
+            .booking-form {
+                width: 100%;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Royal Stay Hotel</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html">Booking</a>
+        <a href="services.html">Services</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2 style="color: black;">Room Booking</h2>
+    <p>Book your luxury stay with Royal Stay Hotel</p>
+</section>
+
+
+<!-- BOOKING SECTION -->
+<div class="booking-wrapper">
+    <div class="booking-form">
+        <h3>Book Your Stay</h3>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number-1" required>
+            <input type="tel" placeholder="Phone Number-2" required>
+
+            <input type="date" required>
+
+            <select required>
+                <option value="">Select Room Type</option>
+                <option>Standard Room</option>
+                <option>Deluxe Room</option>
+                <option>Suite Room</option>
+                <option>Honeymoon Suite</option>
+            </select>
+
+            <input type="number" placeholder="Number of Guests" min="1" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</div>
+
+<section class="testimonials">
+    <h2>What Guests Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-box">
+            <h3>⭐ Rahul</h3>
+            <p>Amazing hotel experience, truly luxurious stay!</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3>❤️ Priya</h3>
+            <p>Best hospitality and delicious food.</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3>😊 Arjun</h3>
+            <p>Rooms were clean and service was excellent.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Royal Stay Hotel | All Rights Reserved
+</footer>
+
+</body>
+</html>
